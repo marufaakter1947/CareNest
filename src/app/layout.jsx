@@ -1,5 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import { AuthProvider } from "@/context/AuthContext";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "CareNest",
@@ -10,8 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <AuthProvider>
+          <Navbar />
         <main>{children}</main>
+        <Toaster></Toaster>
+        </AuthProvider>
       </body>
     </html>
   );
