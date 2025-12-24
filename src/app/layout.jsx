@@ -1,7 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import { AuthProvider } from "@/context/AuthContext";
-// import { AuthProvider } from "@/context/AuthContext";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {

@@ -89,7 +89,7 @@ const Navbar = () => {
               <div className="relative group">
                 <Image
                   src={user.photoURL || "/images/default-avatar.png"}
-                  alt="User Avatar"
+                  alt="Avatar"
                   width={38}
                   height={38}
                   className="rounded-full cursor-pointer border-2 border-[#A7E3CF]"
